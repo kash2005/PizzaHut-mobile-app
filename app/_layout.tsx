@@ -26,10 +26,11 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <Stack screenOptions={{headerShown : false}}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="loading2" />
-        <Stack.Screen name="signIn" />
-        <Stack.Screen name="signUp" />
+        <Stack.Screen name="index"/>
+        <Stack.Screen name="loading2"/>
+        <Stack.Screen name="signIn"/>
+        <Stack.Screen name="signUp"/>
+        <Stack.Screen name="welcomePage"/>
       </Stack>
     </SafeAreaProvider>
   );

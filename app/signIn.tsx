@@ -31,7 +31,7 @@ export default function Index() {
             </TouchableOpacity>
           </View>
         </View>
-        <TouchableOpacity style={styles.button} onPress={()=>{}}>
+        <TouchableOpacity style={styles.button} onPress={()=>{router.push('/welcomePage')}}>
           <Text style={styles.buttonText} >Sign In</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.googleButton}>
