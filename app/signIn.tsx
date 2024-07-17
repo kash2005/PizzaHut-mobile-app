@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import React from "react";
 import { useState } from "react";
 import {Entypo, AntDesign} from "@expo/vector-icons";
+import { Link, router } from "expo-router";
 
 export default function Index() {
   const [email, setEmail] = useState('');
@@ -37,7 +38,7 @@ export default function Index() {
           <Image style={styles.image} source={require('../assets/images/google-logo.png')} />
           <Text style={styles.googleButtonText}>Continue with google</Text>
         </TouchableOpacity>
-        <Text style={styles.signup}>Don’t you have an account ? <Text style={styles.signup2}>Sign Up</Text></Text>
+        <Text style={styles.signup}>Don’t you have an account ? <Link style={styles.signup2} href={'/signUp'}>Sign Up</Link></Text>
       </View>
     </SafeAreaView>
   );
@@ -57,11 +58,13 @@ const styles = StyleSheet.create({
     color: '#EE3A43',
     fontWeight: 'bold',
     fontSize: 28,
+    fontFamily: 'InriaSans-Bold',
   },  
   title: {
     marginVertical: 20,
     color: '#000',
     opacity: 0.7,
+    fontFamily: 'InriaSans-Regular',
   },
   space: {
     marginTop: 20,
@@ -88,6 +91,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 17,
+    fontFamily: 'InriaSans-Bold',
   },
   image: {
     width: 25,
@@ -109,15 +113,18 @@ const styles = StyleSheet.create({
   googleButtonText: {
     fontSize: 16,
     color: '#000',
-    opacity: 0.7
+    opacity: 0.7,
+    fontFamily: 'InriaSans-Regular',
   },
   signup: {
     textAlign: "center",
-    marginTop: 20
+    marginTop: 20,
+    fontFamily: 'InriaSans-Regular',
   },
   signup2: {
     color: '#4D66E8',
     textDecorationLine: 'underline',
+    fontFamily: 'InriaSans-Regular',
   },
  
 });

@@ -29,6 +29,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="loading2" />
         <Stack.Screen name="signIn" />
+        <Stack.Screen name="signUp" />
       </Stack>
     </SafeAreaProvider>
   );
