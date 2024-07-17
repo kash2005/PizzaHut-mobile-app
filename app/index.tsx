@@ -1,6 +1,13 @@
+import { router } from "expo-router";
+import { useEffect } from "react";
 import {View, StyleSheet, Image } from "react-native";
 
 export default function Index() {
+  useEffect(() =>{
+    setTimeout(() =>{
+      router.push('/loading2')
+    },3000)
+  },[])
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={require('../assets/images/pizza-logo.png')}/>
