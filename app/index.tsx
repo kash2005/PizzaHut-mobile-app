@@ -25,8 +25,8 @@ const styles =StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 225,
-    height: 225,
+    // width: 225,
+    // height: 225,
   },
   gif: {
     width: 70,

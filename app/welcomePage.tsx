@@ -1,6 +1,13 @@
 import { View, Image, StyleSheet, Text } from "react-native";
+import { useEffect } from "react";
+import { router } from "expo-router";
 
 export default function Welcome() {
+    useEffect(() =>{
+        setTimeout(() =>{
+          router.push('/homePage')
+        },3000)
+      },[])
     return(
         <View style={styles.container}>
             <Image source={require('../assets/images/welcome-rectangle.png')}/>
