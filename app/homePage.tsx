@@ -1,7 +1,12 @@
 import { Image, StyleSheet, Text, View, TextInput } from "react-native";
+import * as React from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Searchbar } from 'react-native-paper';
 
 export default function Homepage() {
+
+    const [searchQuery, setSearchQuery] = React.useState('');
+
     return(
         <SafeAreaView style={{flex: 1,backgroundColor: "#FBFCFF",justifyContent: "flex-start",}}>
             <View style={styles.firstContainer}>
@@ -19,8 +24,18 @@ export default function Homepage() {
                     <Text style={styles.title2}>Your favorite pizza, just a tap away.</Text>
                     <Text style={styles.subTitle2}>Easy pizza ordering, fast delivery.</Text>
                 </View>
-                <TextInput style={styles.input} placeholder="hot pepperoni pizza">
-                </TextInput>
+                <Searchbar
+                    placeholder="hot pepperoni pizza"
+                    onChangeText={setSearchQuery}
+                    value={searchQuery}
+                    style={{
+                        borderRadius: 25,
+                        backgroundColor: '#eeeff2',
+                        
+                    }}
+                />
+                {/* <TextInput style={styles.input} placeholder="hot pepperoni pizza">
+                </TextInput> */}
             </View>
             
         </SafeAreaView>
