@@ -12,7 +12,6 @@ export default function SignUp() {
           <Appbar.Content 
             title="Sign Up" 
             titleStyle={{ color: "#fff" }} 
-            subtitleStyle={{ color: "#fff" }}
           />
         </Appbar.Header>
         <View style={styles.container}>

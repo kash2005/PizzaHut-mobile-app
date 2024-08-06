@@ -1,20 +1,20 @@
 import { View, StyleSheet, Image, TouchableOpacity,TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, Button  } from 'react-native-paper';
+import { Text, Button, Appbar  } from 'react-native-paper';
 import React from "react";
 import { Link, router } from "expo-router";
 
 export default function Index() {
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
-        <Text variant="titleLarge" 
-          style={{
-            color: '#EE3A43',
-            fontFamily: 'InriaSans-Bold',
-          }}
-        >Welcome Back</Text>
+    <View style={{ flex: 1,backgroundColor: "#FBFCFF",justifyContent: "flex-start",}}>
+      <Appbar.Header style={{ backgroundColor: "#FBFCFF" }}>
+          <Appbar.Content 
+            title="Welcome Back" 
+            titleStyle={{ color: "#EE3A43", fontFamily: 'InriaSans-Bold', }} 
+          />
+        </Appbar.Header>
+        <View style={styles.container}>
         <Text variant="labelMedium"
           style={{
             color: '#000',
@@ -55,16 +55,13 @@ export default function Index() {
           <Text variant="labelMedium" style={{textAlign: "center",marginTop: 20}}>Don’t you have an account ? <Link style={{color: '#4D66E8',textDecorationLine: "underline"}} href={'/signUp'}>Sign Up</Link></Text>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#FBFCFF",
-    alignItems: "center",
-    justifyContent: "flex-start",
     paddingTop: 20,
     paddingLeft: 20,
     paddingRight: 20,
