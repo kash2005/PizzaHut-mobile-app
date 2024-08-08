@@ -2,6 +2,7 @@ import { Image, StyleSheet, View, FlatList } from "react-native";
 import * as React from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Searchbar,IconButton, Text, Card, Button } from 'react-native-paper';
+import { Link, router } from "expo-router";
 
 export default function Homepage() {
 
@@ -192,7 +193,7 @@ export default function Homepage() {
                             borderColor: "#EE3A43",
                         }}
                         size={20}
-                        onPress={() => console.log('Pressed')}
+                        onPress={() => router.push('/cartPage')}
                     />
                 </View>
                 <Card style={{marginTop: 20,borderRadius: 25,}}>
