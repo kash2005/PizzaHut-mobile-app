@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Text, Appbar, List, Button, Menu, Icon  } from 'react-native-paper';
 import { View, Image,TouchableOpacity} from 'react-native';
 import { router } from "expo-router";
-import { EvilIcons, Ionicons, MaterialIcons } from '@expo/vector-icons';
+import { EvilIcons, Ionicons, } from '@expo/vector-icons';
 export default function ProfilePage(){
     return(
         <View style={{ flex: 1,backgroundColor: "#FBFCFF",justifyContent: "flex-start",}}>
@@ -10,7 +10,7 @@ export default function ProfilePage(){
                 <Appbar.BackAction onPress={router.back} color="#fff" />
                 <Appbar.Content 
                 title="Profile" 
-                titleStyle={{ color: "#fff",marginLeft: 105 }} 
+                titleStyle={{ color: "#fff", }} 
             />
             </Appbar.Header>
             <View style={{justifyContent:'center',alignItems:'center',marginTop:10}}>

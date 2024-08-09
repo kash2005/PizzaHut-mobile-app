@@ -7,6 +7,8 @@ export default function TabLayout() {
     <Tabs screenOptions={{headerShown:false, tabBarActiveTintColor: "#EE3A43"}}>
       <Tabs.Screen options={{title: "Home",
                 tabBarIcon:({color}) => <Icon size={35} source="home" color={color}/>}} name="(home)" />
+      <Tabs.Screen options={{title: "Notification",
+                tabBarIcon:({color}) => <FontAwesome6 size={35} name="bell" solid color={color}/>}} name="(notification)" />          
       <Tabs.Screen options={{title: "Profile",
                 tabBarIcon:({color}) => <FontAwesome6 size={35} name="user" solid color={color}/>}} name="(profile)" />
     </Tabs>

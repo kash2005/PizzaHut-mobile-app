@@ -1,10 +1,9 @@
-import ProfilePage from "@/screens/profilePage";
+import NotificationPage from "@/screens/notificationPage";
 import { ScrollView } from "react-native";
 export default function Index(){
     return(
         <ScrollView>
-            <ProfilePage/>
+            <NotificationPage/>
         </ScrollView>
-        
     );
 }

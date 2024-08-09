@@ -40,7 +40,7 @@ export default function Homepage() {
     const data2 = [
         {
             id: 1,
-            image2: require('../assets/images/card-pizza-4.png'),
+            image2: require('../assets/images/card-pizza-5.png'),
             title: 'Regular Pizza+',
             description: 'cheese and chicken',
             prize: 'Rs.2500.00',
@@ -56,7 +56,7 @@ export default function Homepage() {
         },
         {
             id: 3,
-            image2: require('../assets/images/card-pizza-4.png'),
+            image2: require('../assets/images/card-pizza-5.png'),
             title: 'Regular Pizza+',
             description: 'cheese and chicken',
             prize: 'Rs.2500.00',
