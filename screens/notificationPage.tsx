@@ -9,7 +9,7 @@ export default function NotificationPage(){
             <Appbar.Header style={{ backgroundColor: "#EE3A43" }}>
                 <Appbar.BackAction onPress={router.back} color="#fff" />
                 <Appbar.Content 
-                title="Profile" 
+                title="Notification" 
                 titleStyle={{ color: "#fff", }} 
             />
             </Appbar.Header>
@@ -20,7 +20,7 @@ export default function NotificationPage(){
                         opacity: 0.5,  
                         marginBottom:355
                     }}
-                >There are no item in this cart.</Text>
+                >No content.</Text>
             </View>
                 
         </View>

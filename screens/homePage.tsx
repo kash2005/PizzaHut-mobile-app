@@ -68,7 +68,10 @@ export default function Homepage() {
         return  (
             <View>
                 <Card style={{backgroundColor:item.id%2===0 ? '#EE3A43':'#eeeff2', marginHorizontal:10, width:271, height:165}}>
-                    <Card.Content>
+                    <Card.Content style={{
+                        left: 13,
+                        bottom: 1,
+                    }}>
                     <View
                         style={{
                             flexDirection: 'row',
@@ -147,7 +150,7 @@ export default function Homepage() {
                             justifyContent: 'center',
                             alignItems: 'center',
                             bottom:'80%',
-                            left:'88%'
+                            left:'90%'
                         }}>
                             <Image source={item.plus} style={{width:25,height:25,}}/>  
                         </View>

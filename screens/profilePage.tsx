@@ -23,6 +23,7 @@ export default function ProfilePage(){
                     paddingTop: 30,
                     paddingLeft: 30,
                     paddingRight: 30,
+                    paddingBottom:140,
                     flex: 1,
                 }}>
                 <TouchableOpacity
